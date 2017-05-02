@@ -23,6 +23,7 @@ module OmniAuth
       # https://github.com/intridea/omniauth/wiki/Auth-Hash-Schema#schema-10-and-later
       info do
         {
+          :provider => raw_info['Provider'],
           :name => raw_info['DisplayName'],
           :email => raw_info['EmailAddress'],
           :nickname => raw_info['Alias']
